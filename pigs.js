@@ -1,12 +1,13 @@
 let whichPlayer = 0
 function handleClick(whichBTN) {
-    
-  //makes  players turn  
+    playerDesign(whichPlayer)
+  
+    //makes  players turn  
     if (whichPlayer == 0 && (whichBTN == 'player0RollButton' || whichBTN == 'player0PassButton')){
         if (whichBTN == 'player0RollButton') {
             console.log('thats a Roll')
         }else{
-            console.log('thats a Pass  It is ' + whichPlayer)
+            console.log('thats a Pass  ' + whichPlayer)
             whichPlayer++
         }
     }
