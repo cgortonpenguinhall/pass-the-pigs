@@ -15,9 +15,6 @@ function roll() {
         return "Leaning Jowler"
     }
 }
-    console.log(roll())
+   
 
-    function presentPigs(){
-    
-    }
-
+console.log(roll()) 
