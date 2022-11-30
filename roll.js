@@ -2,22 +2,20 @@
 function roll() {
     let randomNumber = Math.random()
     if (randomNumber <= 0.349) {
-        console.log("Dot")
+        return "Dot"
     } else if (randomNumber <= 0.651) {
-        console.log("No Dot")
+        return "No Dot"
     } else if (randomNumber <= 0.875) {
-        console.log("Razorback")
+        return "Razorback"
     } else if (randomNumber <= 0.963) {
-        console.log("Trotter")
+        return "Trotter"
     } else if (randomNumber <= 0.993) {
-        console.log("Snouter")
-    } else if (randomNumber <= 1) {
-        console.log("Leaning Jowler")
+        return "Snouter"
+    } else  {
+        return "Leaning Jowler"
     }
 }
+    console.log(roll())
 
 
-for (let i = 0; i <= 1000; i++) {
-    roll()
-}
 
