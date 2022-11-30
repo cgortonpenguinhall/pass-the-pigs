@@ -7,6 +7,7 @@ function handleClick(whichBTN) {
         if (whichBTN == 'player0RollButton') {
             let pig1 = roll()
             let pig2 = roll()
+            presentPigs(whichPlayer,pig1,pig2)
 
         } else {
             console.log('thats a Pass  ' + whichPlayer)
@@ -19,6 +20,7 @@ function handleClick(whichBTN) {
         if (whichBTN == 'player1RollButton') {
             let pig1 = roll()
             let pig2 = roll()
+            presentPigs(whichPlayer,pig1,pig2)
         }else{
             console.log('thats a Pass  ' + whichPlayer)
             whichPlayer++
@@ -31,6 +33,7 @@ function handleClick(whichBTN) {
         if (whichBTN == 'player2RollButton') {
             let pig1 = roll()
             let pig2 = roll()
+            presentPigs(whichPlayer,pig1,pig2)
         }else{
             console.log('thats a Pass  ' + whichPlayer)
             whichPlayer++
@@ -43,6 +46,7 @@ function handleClick(whichBTN) {
         if (whichBTN == 'player3RollButton') {
             let pig1 = roll()
             let pig2 = roll()
+            presentPigs(whichPlayer,pig1,pig2)
         }else{
             console.log('thats a Pass  ' + whichPlayer)
             whichPlayer = 0
@@ -52,9 +56,6 @@ function handleClick(whichBTN) {
 }
 
 
-function presentPigs() {
-    document.getElementById('player' + whichPlayer + 'Pig1').innerHTML = pig1
-    document.getElementById('player' + whichPlayer + 'Pig2').innerHTML = pig2
-}
+
 
 

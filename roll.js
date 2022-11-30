@@ -17,4 +17,8 @@ function roll() {
 }
    
 
-console.log(roll()) 
+function presentPigs(whichPlayer, pig1, pig2) {
+    document.getElementById('player' + whichPlayer + 'Pig1').innerHTML = pig1
+    document.getElementById('player' + whichPlayer + 'Pig2').innerHTML = pig2
+    console.log('ur mom')
+}
