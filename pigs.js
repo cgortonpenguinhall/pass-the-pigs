@@ -7,7 +7,10 @@ let TotalScore3 = 0
 
 playerDesign(whichPlayer)
 function handleClick(whichBTN) {
-
+    //replay
+    if(whichBTN == 'replay'){
+        location.reload();
+    }
     //makes  players turn  
     
         if (whichBTN == 'player' +whichPlayer+ 'RollButton') {
