@@ -8,6 +8,7 @@ function handleClick(whichBTN) {
             let pig1 = roll()
             let pig2 = roll()
             presentPigs(whichPlayer,pig1,pig2)
+            document.getElementById('player' +whichPlayer+ 'HandScore').innerHTML = 'Score: '+ scorePigs(pig1,pig2)
 
         } else if(whichBTN == 'player' +whichPlayer+ 'PassButton'){
             console.log('thats a Pass  ' + whichPlayer)
