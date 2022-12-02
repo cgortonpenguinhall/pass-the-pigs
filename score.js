@@ -3,7 +3,7 @@ let handScore = 0;
 
   // handle doubles
   if (pig1 == pig2) {
-    if (pig1 == 'Dot' || pig1 == 'No dot') {
+    if (pig1 == 'Dot' || pig1 == 'No Dot') {
       return 1;
     } else if (pig1 == 'Razorback' || pig1 == 'Trotter') {
       return 20;
