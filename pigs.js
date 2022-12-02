@@ -71,7 +71,7 @@ function handleClick(whichBTN) {
     }
 
     function checkWinner(finalScore){
-        if((finalScore + score) >= 10){
+        if((finalScore + score) >= 100){
             document.getElementById('player'+whichPlayer).setAttribute('class', 'w3-card w3-container w3-yellow w3-round-large')
             score = 0
             document.getElementById('replay').setAttribute('class', "w3-row w3-container w3-show")
