@@ -11,7 +11,16 @@ function handleClick(whichBTN) {
 
         } else if(whichBTN == 'player' +whichPlayer+ 'PassButton'){
             console.log('thats a Pass  ' + whichPlayer)
-            whichPlayer++
+            getNextPlayer(whichPlayer)
             playerDesign(whichPlayer)
+        }
+    }
+
+    //changePlayer
+    function getNextPlayer(CurrentPlayer){
+        if(CurrentPlayer <3){
+            whichPlayer++
+        }else{
+            whichPlayer = 0
         }
     }
